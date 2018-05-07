@@ -17,3 +17,7 @@ val lines = sc.textFile("file://")
 val words = lines.flatMap(line=>line.split(" "))
 val word_for_count = words.map(x=>(x,1))
 word_for_count.reduceByKey(_+_).collect()
+```
+
+## 6. Getting Technical with Spark
+### 1 Getting Technical: Spark Architecture
